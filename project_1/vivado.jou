@@ -13,3 +13,8 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v}
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v}
+update_compile_order -fileset sources_1
