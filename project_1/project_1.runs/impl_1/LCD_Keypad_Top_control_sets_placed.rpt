@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Nov 15 19:32:34 2023
+| Host         : KEN228_07 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file LCD_Keypad_Top_control_sets_placed.rpt
+| Design       : LCD_Keypad_Top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    67 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              15 |            9 |
+| No           | No                    | Yes                    |              49 |           17 |
+| No           | Yes                   | No                     |              45 |           12 |
+| Yes          | No                    | No                     |              32 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+---------------------------+--------------------------+------------------+----------------+--------------+
+|          Clock Signal         |       Enable Signal       |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+---------------------------+--------------------------+------------------+----------------+--------------+
+|  cur_state_reg[3]_i_1_n_0     | L1/RS_i_2_n_0             | L1/RS_i_1_n_0            |                1 |              1 |         1.00 |
+|  flagCount_reg[15]_i_2_n_0    |                           |                          |                1 |              2 |         2.00 |
+|  C1/clkout_reg_0              |                           |                          |                1 |              2 |         2.00 |
+|  cur_state_reg[3]_i_1_n_0     |                           |                          |                2 |              3 |         1.50 |
+|  L1/next_state_reg[3]_i_2_n_0 |                           |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                |                           |                          |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG                | K1/Col[3]_i_1_n_0         |                          |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                | K1/DecodeOut              |                          |                3 |              4 |         1.33 |
+|  flagCount_reg[15]_i_2_n_0    | K1/Out0[3]_i_1_n_0        |                          |                1 |              4 |         4.00 |
+|  flagCount_reg[15]_i_2_n_0    | K1/Out2[3]_i_1_n_0        |                          |                1 |              4 |         4.00 |
+|  flagCount_reg[15]_i_2_n_0    | K1/Out3[3]_i_1_n_0        |                          |                2 |              4 |         2.00 |
+|  flagCount_reg[15]_i_2_n_0    | K1/Out1[3]_i_1_n_0        |                          |                1 |              4 |         4.00 |
+|  cur_state_reg[3]_i_1_n_0     |                           | reset_IBUF               |                1 |              4 |         4.00 |
+|  cur_state_reg[3]_i_1_n_0     | L1/data[7]_i_1_n_0        |                          |                5 |              8 |         1.60 |
+|  cur_state_reg[3]_i_1_n_0     | L1/letter_pos[7]_i_2_n_0  | L1/letter_pos[7]_i_1_n_0 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                | flagCount_reg[15]_i_2_n_0 | K1/flagCount[15]_i_1_n_0 |                4 |             15 |         3.75 |
+|  cur_state_reg[3]_i_1_n_0     |                           | L1/delayOK               |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                |                           | K1/count[28]_i_1_n_0     |                8 |             29 |         3.62 |
+|  clk_IBUF_BUFG                |                           | reset_IBUF               |               16 |             45 |         2.81 |
++-------------------------------+---------------------------+--------------------------+------------------+----------------+--------------+
+
+
