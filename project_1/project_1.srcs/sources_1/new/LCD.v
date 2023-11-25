@@ -10,9 +10,9 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
     reg [27:0] clkcount;
     reg clk_divide_1MHz;
     reg [15:0] delay_count;
-   
+    reg [2:0] key_count;
     
-    parameter [3:0] Initalize           = 1,
+    parameter [3:0] Initialize          = 1,
                     Function_Set        = 2,
                     Wait1               = 3,
                     Display_Set         = 4,
@@ -26,9 +26,10 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
                     Wait4               = 12,
                     Input_Wait          = 13,
                     Write_Input         = 14,
-                    Write_Delay2        = 15;
+                    Write_Delay2        = 15,
+                    End                 = 16;
                     
-    reg [3:0] state = Initalize;
+    reg [3:0] state = Initialize;
     reg E = 0, RS = 0, R_W = 0; 
     reg [7:0] data = 0;
     
@@ -83,9 +84,16 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
     
     always @(posedge clk_divide_1MHz) begin
     
+        if (reset) begin
+        
+            state <= Initialize;
+            key_count <= 0;
+        
+        end else begin
+    
         case (state)
         
-        Initalize: 
+        Initialize: 
         begin
           
           RS <= 0;
@@ -224,7 +232,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
           
           RS <= 0;
           E <= 1;
-          data <= 8'hC2;
+          data <= 8'hC6;
 
           state <= Wait4;
         
@@ -248,8 +256,14 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
         begin
         
           if (Key_Flag) begin
-                   
-            state <= Write_Input;
+            
+            key_count <= key_count + 1;
+          
+            if (key_count < 4) begin        
+                state <= Write_Input;
+            end else begin
+                state <= End;
+            end
           
           end else begin
           
@@ -285,7 +299,12 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
         
         end
         
+        End:
+          state <= End;
+        
       endcase
+      
+      end
     
     end
     
