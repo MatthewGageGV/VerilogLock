@@ -1,11 +1,12 @@
 `timescale 1ns / 1ps
 
 module LCD_Decoder(decode_in, decode_out);
+
 input[3:0] decode_in;
 output[7:0] decode_out;
 
-reg decode_out;
-wire decode_in;
+wire [3:0] decode_in;
+reg [7:0] decode_out;
 
 always @(decode_in) begin
     case (decode_in)

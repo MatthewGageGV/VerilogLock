@@ -1,31 +1,26 @@
 `timescale 1ns / 1ps
 
-module Keypad(clk, Row, Col, Out0, Out1, Out2, Out3);
+module Keypad(clk, Row, Col, Out0, Out1, Out2, Out3, Flag_out, Key_out);
 
 input clk;
-input [3:0] Row;    // Port JA on Basys3
+input [3:0] Row;
+output Flag_out;
 output [3:0] Col;
-output [3:0] Out0;
-output [3:0] Out1;
-output [3:0] Out2;
-output [3:0] Out3;
+output [3:0] Key_out;
+output [3:0] Out0, Out1, Out2, Out3;
 
-reg flag;
+reg flag, scan;
 reg [15:0] flagCount;
 reg [1:0] sel;
-reg scan;
 reg [28:0] count;
 reg [3:0] Col;
-reg [3:0] Out0;
-reg [3:0] Out1;
-reg [3:0] Out2;
-reg [3:0] Out3;
+reg [3:0] Out0, Out1, Out2, Out3;
 reg [3:0]DecodeOut;
 
 always @(posedge clk) begin
     // Set a flag high every 0.25 seconds
     if (count == 12500000) begin
-      count <= 0; // Reset count after 1 second
+      count <= 0; // Reset count
       scan <= ~scan;
     end else begin
       count <= count + 1;
@@ -198,5 +193,8 @@ sel <= sel + 1;
     endcase
     
 end
+
+assign Flag_out = flag;
+assign Key_out = DecodeOut;
 
 endmodule

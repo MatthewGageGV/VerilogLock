@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.tcl"
+  variable script "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,34 +70,31 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 1
-set_param synth.incrementalSynthesisCache C:/Users/berringb/Desktop/VerilogLock/project_1/.Xil/Vivado-17896-KEN228_07/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/berringb/Desktop/VerilogLock/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v
-  C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v
+  C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -108,12 +105,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc
-set_property used_in_implementation false [get_files C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]
+read_xdc C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc
+set_property used_in_implementation false [get_files C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Nov 15 19:32:02 2023
-# Process ID: 15808
-# Current directory: C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.runs/impl_1
+# Start of session at: Sat Nov 25 13:07:26 2023
+# Process ID: 5768
+# Current directory: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/impl_1
 # Command line: vivado.exe -log LCD_Keypad_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source LCD_Keypad_Top.tcl -notrace
-# Log file: C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.runs/impl_1/LCD_Keypad_Top.vdi
-# Journal file: C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.runs/impl_1\vivado.jou
-# Running On: KEN228_07, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 16979 MB
+# Log file: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/impl_1/LCD_Keypad_Top.vdi
+# Journal file: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/impl_1\vivado.jou
+# Running On: WINLAB-EGR_252, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 4, Host memory: 25768 MB
 #-----------------------------------------------------------
 source LCD_Keypad_Top.tcl -notrace

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1700094663" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/LCD_Keypad_Top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1700935559" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/LCD_Keypad_Top.dcp">
   <File Type="PA-TCL" Name="LCD_Keypad_Top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="LCD_Keypad_Top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="LCD_Keypad_Top_reports.tcl"/>
@@ -26,6 +26,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/LCD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LCD_dec.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

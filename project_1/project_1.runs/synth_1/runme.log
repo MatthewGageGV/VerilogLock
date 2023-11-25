@@ -14,9 +14,9 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source LCD_Keypad_Top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 458.820 ; gain = 185.586
-Command: read_checkpoint -auto_incremental -incremental C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 458.598 ; gain = 180.738
+Command: read_checkpoint -auto_incremental -incremental C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top LCD_Keypad_Top -part xc7a35tcpg236-1
 Starting synth_design
@@ -27,90 +27,89 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14908
-WARNING: [Synth 8-9926] potential always loop found [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:39]
+INFO: [Synth 8-7075] Helper process launched with PID 9468
+WARNING: [Synth 8-9400] empty statement in sequential block [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:48]
+WARNING: [Synth 8-9926] potential always loop found [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:39]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1274.078 ; gain = 412.746
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.195 ; gain = 412.473
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'LCD_Keypad_Top' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Clk_Divider_1KHz' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Clk_Divider_1KHz' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Two_Bit_Counter' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Two_Bit_Counter' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Multiplexer' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:3]
-WARNING: [Synth 8-567] referenced signal 'seg0' should be on the sensitivity list [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
-WARNING: [Synth 8-567] referenced signal 'seg1' should be on the sensitivity list [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
-WARNING: [Synth 8-567] referenced signal 'seg2' should be on the sensitivity list [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
-WARNING: [Synth 8-567] referenced signal 'seg3' should be on the sensitivity list [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'Multiplexer' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Seg_Decoder' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:19]
-WARNING: [Synth 8-85] always block has no event control specified [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:17]
-INFO: [Synth 8-6155] done synthesizing module 'Seg_Decoder' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Keypad' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:42]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:76]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:110]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:144]
-INFO: [Synth 8-6155] done synthesizing module 'Keypad' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:3]
-INFO: [Synth 8-6157] synthesizing module 'LCD' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:119]
-INFO: [Synth 8-6155] done synthesizing module 'LCD' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:3]
-WARNING: [Synth 8-7071] port 'LED1' of module 'LCD' is unconnected for instance 'L1' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:31]
-WARNING: [Synth 8-7071] port 'LED2' of module 'LCD' is unconnected for instance 'L1' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:31]
-WARNING: [Synth 8-7071] port 'LED3' of module 'LCD' is unconnected for instance 'L1' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:31]
-WARNING: [Synth 8-7023] instance 'L1' of module 'LCD' has 9 connections declared, but only 6 given [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'LCD_Keypad_Top' (0#1) [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:3]
-WARNING: [Synth 8-7137] Register clk_divide_1MHz_reg in module LCD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:68]
+INFO: [Synth 8-6157] synthesizing module 'LCD_Keypad_Top' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Clk_Divider_1KHz' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Divider_1KHz' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Two_Bit_Counter' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Two_Bit_Counter' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:3]
+WARNING: [Synth 8-567] referenced signal 'seg0' should be on the sensitivity list [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
+WARNING: [Synth 8-567] referenced signal 'seg1' should be on the sensitivity list [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
+WARNING: [Synth 8-567] referenced signal 'seg2' should be on the sensitivity list [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
+WARNING: [Synth 8-567] referenced signal 'seg3' should be on the sensitivity list [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Seg_Decoder' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:19]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Seg_Decoder' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Keypad' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'Keypad' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LCD_Decoder' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_Decoder' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LCD' [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'LCD' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_Keypad_Top' (0#1) [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:3]
+WARNING: [Synth 8-7137] Register clk_divide_1MHz_reg in module LCD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:74]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1366.680 ; gain = 505.348
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1369.113 ; gain = 505.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1366.680 ; gain = 505.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1369.113 ; gain = 505.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1366.680 ; gain = 505.348
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1369.113 ; gain = 505.391
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1366.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1369.113 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]
-Finished Parsing XDC File [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LCD_Keypad_Top_propImpl.xdc].
+Parsing XDC File [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LCD_Keypad_Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/LCD_Keypad_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1407.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1469.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1407.832 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1469.969 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:123]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -119,35 +118,32 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   29 Bit       Adders := 1     
 	   2 Input   28 Bit       Adders := 1     
-	   2 Input   16 Bit       Adders := 2     
-	   2 Input    8 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 2     
 +---Registers : 
 	               29 Bit    Registers := 1     
 	               28 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
 	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 7     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input   28 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 2     
-	   4 Input    8 Bit        Muxes := 2     
-	  15 Input    8 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 6     
+	  16 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  16 Input    8 Bit        Muxes := 2     
 	   4 Input    7 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 6     
 	   5 Input    4 Bit        Muxes := 4     
-	   9 Input    4 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 2     
 	   4 Input    2 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 21    
-	   5 Input    1 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 14    
+	   5 Input    1 Bit        Muxes := 2     
 	   4 Input    1 Bit        Muxes := 5     
-	   9 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -166,25 +162,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design LCD_Keypad_Top has port R_W driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -202,37 +198,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,43 +246,39 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     3|
 |2     |CARRY4 |    26|
-|3     |LUT1   |     5|
-|4     |LUT2   |    22|
-|5     |LUT3   |    28|
-|6     |LUT4   |    51|
-|7     |LUT5   |    53|
-|8     |LUT6   |    77|
+|3     |LUT1   |     4|
+|4     |LUT2   |    25|
+|5     |LUT3   |    29|
+|6     |LUT4   |    50|
+|7     |LUT5   |    59|
+|8     |LUT6   |    74|
 |9     |MUXF7  |     7|
-|10    |FDCE   |    48|
-|11    |FDPE   |     1|
-|12    |FDRE   |   111|
-|13    |FDSE   |     1|
-|14    |LD     |     4|
-|15    |IBUF   |     6|
-|16    |OBUF   |    26|
+|10    |FDCE   |    45|
+|11    |FDRE   |   110|
+|12    |IBUF   |     6|
+|13    |OBUF   |    26|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1407.832 ; gain = 505.348
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.832 ; gain = 546.500
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1469.969 ; gain = 505.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1469.969 ; gain = 606.246
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1407.832 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1469.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1408.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1469.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  LD => LDCE: 4 instances
+No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 3493519
+Synth Design complete | Checksum: cede6c54
 INFO: [Common 17-83] Releasing license: Synthesis
-41 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1408.695 ; gain = 925.016
-INFO: [Common 17-1381] The checkpoint 'C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 1469.969 ; gain = 986.539
+INFO: [Common 17-1381] The checkpoint 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file LCD_Keypad_Top_utilization_synth.rpt -pb LCD_Keypad_Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 15 19:31:54 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 25 13:07:17 2023...

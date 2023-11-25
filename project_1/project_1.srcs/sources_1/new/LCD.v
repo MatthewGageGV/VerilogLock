@@ -1,13 +1,11 @@
 `timescale 1ns / 1ps
 
-module LCD (clk, reset, data, RS, R_W, E, LED1, LED2, LED3);
+module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
 
-    input clk, reset;
+    input clk, reset, Key_Flag;
+    input [7:0] Key_in;
     output [7:0] data;
     output E, RS, R_W;
-    output [3:0] LED1;
-    output LED2;
-    output [7:0] LED3;
     
     reg [27:0] clkcount;
     reg clk_divide_1MHz;
@@ -21,38 +19,46 @@ module LCD (clk, reset, data, RS, R_W, E, LED1, LED2, LED3);
                     Wait2               = 5,
                     Display_Clear       = 6,
                     Wait3               = 7,
-                    Idle                = 8;
+                    DisplayOK           = 8,
+                    Write1              = 9,
+                    Write_Delay1        = 10,
+                    Shift               = 11,
+                    Wait4               = 12,
+                    Input_Wait          = 13,
+                    Write_Input         = 14,
+                    Write_Delay2        = 15;
                     
-    reg [3:0] cur_state = Initalize, next_state;
+    reg [3:0] state = Initalize;
     reg E = 0, RS = 0, R_W = 0; 
     reg [7:0] data = 0;
     
-    reg delayOK;
-    
     reg [7:0] letter_pos;
-    reg flag = 0;
-    reg [7:0] welcome_ascii [0:13];
-    reg [7:0] number_ascii [0:2];
+    reg [7:0] line1 [0:14];
 
     initial begin
-        welcome_ascii[0]  = 8'h57; // 'W'
-        welcome_ascii[1]  = 8'h65; // 'e'
-        welcome_ascii[2]  = 8'h6C; // 'l'
-        welcome_ascii[3]  = 8'h63; // 'c'
-        welcome_ascii[4]  = 8'h6F; // 'o'
-        welcome_ascii[5]  = 8'h6D; // 'm'
-        welcome_ascii[6]  = 8'h65; // 'e'
-        welcome_ascii[7]  = 8'h20; // ' '
-        welcome_ascii[8]  = 8'h54; // 'T'
-        welcome_ascii[9]  = 8'h6F; // 'o'
-        welcome_ascii[10] = 8'h20; // ' '
-        welcome_ascii[11] = 8'h45; // 'E'
-        welcome_ascii[12] = 8'h47; // 'G'
-        welcome_ascii[13] = 8'h52; // 'R'
+    
+        line1[0] = 8'h45;  // E
+        line1[1] = 8'h6E;  // n
+        line1[2] = 8'h74;  // t
+        line1[3] = 8'h65;  // e
+        line1[4] = 8'h72;  // r
 
-        number_ascii[0] = 8'h32; // '2'
-        number_ascii[1] = 8'h32; // '2'
-        number_ascii[2] = 8'h34; // '4'
+        line1[5] = 8'h20;  // space
+
+        line1[6] = 8'h34;  // 4
+
+        line1[7] = 8'h20;  // space
+
+        line1[8] = 8'h64;  // d
+        line1[9] = 8'h69;  // i
+        line1[10] = 8'h67; // g
+
+        line1[11] = 8'h20; // space
+
+        line1[12] = 8'h50; // P
+        line1[13] = 8'h49; // I
+        line1[14] = 8'h4E; // N
+    
     end
   
     // 1MHz clock divider
@@ -75,156 +81,212 @@ module LCD (clk, reset, data, RS, R_W, E, LED1, LED2, LED3);
         
     end
     
-    // Delay Handler
     always @(posedge clk_divide_1MHz) begin
     
-        if (delayOK) begin
-            
+        case (state)
+        
+        Initalize: 
+        begin
+          
+          RS <= 0;
+          E <= 0;
+          
+          if (delay_count == 20000) begin
+            state <= Function_Set;
             delay_count <= 0;
-            
-            
-        end else begin
-        
+          end else begin
             delay_count <= delay_count + 1;
-            
+          end             
+                     
         end
-    
-    delayOK <= (
-        ((cur_state == Initalize) && (delay_count == 20000)) ||
-        ((cur_state == Wait1) && (delay_count == 40)) ||
-        ((cur_state == Wait2) && (delay_count == 40)) ||
-        ((cur_state == Wait3) && (delay_count == 1600)) ||
-        ((cur_state == Idle) && (delay_count == 26000))
-    ) ? 1 : 0;
         
-    end
-       
-    always @(posedge clk_divide_1MHz or posedge reset) begin
-    
-        if (reset) begin
+        Function_Set:
+        begin
         
-            cur_state <= Initalize;
-            
-        end else begin
-        
-            cur_state <= next_state;
+          RS <= 0;
+          E <= 1;
+          data <= 8'h3C;
+          
+          state <= Wait1;
         
         end
-    
-    end
-    
-    // State Transition Handler
-    always @(cur_state or delayOK) begin
-    
-        case (cur_state) 
         
-         Initalize:
-            if (delayOK) begin
-             next_state <= Function_Set;
-            end else begin
-             next_state <= Initalize;
-            end
-            
-         Function_Set:
-            next_state <= Wait1;
-            
-         Wait1:
-            if (delayOK) begin
-             next_state <= Display_Set;
-            end else begin
-             next_state <= Wait1;
-            end
-            
-         Display_Set:
-            next_state <= Wait2;
-            
-         Wait2:
-            if (delayOK) begin
-             next_state <= Display_Clear;
-            end else begin
-             next_state <= Wait2;
-            end
-            
-         Display_Clear:
-            next_state <= Wait3;
-            
-         Wait3:
-            if (delayOK) begin
-             next_state <= Idle;
-            end else begin
-             next_state <= Wait3;
-            end
-            
-         Idle:
-            next_state <= Idle;
-            
-        endcase
+        Wait1:
+        begin
+          
+          E <= 0;
+          
+          if (delay_count == 40) begin
+            state <= Display_Set;
+            delay_count <= 0;
+          end else begin
+            delay_count <= delay_count + 1;
+          end             
+                     
+        end
         
-    end
-    
-    // State Output Handler
-    always @(posedge clk_divide_1MHz) begin
-    
-        if (next_state == Function_Set) begin
+        Display_Set:
+        begin
         
-            E <= 1;
-            data <= 8'h3C;
-        
-        end else if (next_state == Display_Set) begin
-        
-            E <= 1;
-            data <= 8'h0F;
-        
-        end else if (next_state == Display_Clear) begin
-        
-            E <= 1;
-            data <= 8'h01;
-        
-        end else if (next_state == Idle) begin
-            
-            if ((!flag) && delayOK && (letter_pos != 14)) begin
-                
-                RS <= 1;
-                letter_pos <= letter_pos + 1;
-                data <= welcome_ascii[letter_pos];
-                E <= 1;
-                
-            end else if ((!flag) && delayOK && (letter_pos == 14)) begin
-                
-                RS <= 0;
-                data <= 8'hC7;
-                E <= 1;
-                
-                letter_pos <= 0;
-                flag <= 1;
-                
-            end else if (flag && delayOK && (letter_pos != 3)) begin
-                
-                RS <= 1;
-                data <= number_ascii[letter_pos];
-                letter_pos <= letter_pos + 1;
-                E <= 1;
-            
-            end else begin
-            
-                E <= 0; 
-                
-            end
-            
-                        
-        end else begin
-        
-            if (E) E <= 0;
+          RS <= 0;
+          E <= 1;
+          data <= 8'h0F;
+          
+          state <= Wait2;
         
         end
+        
+        Wait2:
+        begin
+          
+          E <= 0;
+          
+          if (delay_count == 40) begin
+            state <= Display_Clear;
+            delay_count <= 0;
+          end else begin
+            delay_count <= delay_count + 1;
+          end             
+                     
+        end
+        
+        Display_Clear:
+        begin
+        
+          RS <= 0;
+          E <= 1;
+          data <= 8'h01;
+          
+          state <= Wait3;
+        
+        end
+        
+        Wait3:
+        begin
+          
+          E <= 0;
+          
+          if (delay_count == 1600) begin
+            state <= DisplayOK;
+            delay_count <= 0;
+          end else begin
+            delay_count <= delay_count + 1;
+          end             
+                     
+        end
+        
+        DisplayOK:
+        begin
+        
+          state <= Write1;
+        
+        end
+        
+        Write1:
+        begin
+        
+          RS <= 1;
+          E <= 1;
+                
+          letter_pos <= letter_pos + 1;
+          data <= line1[letter_pos];
+                
+          if (letter_pos == 15) begin 
+                
+            letter_pos <= 0;
+            state <= Shift; 
+                
+          end else begin
+          
+            state <= Write_Delay1;
+            
+          end
+        
+        end
+        
+        Write_Delay1:
+        begin
+        
+          E <= 0;
+          
+          if (delay_count == 26000) begin
+            state <= Write1;
+            delay_count <= 0;
+          end else begin 
+            state <= Write_Delay1;
+            delay_count <= delay_count + 1;
+          end             
+        
+        end
+        
+        Shift:
+        begin
+          
+          RS <= 0;
+          E <= 1;
+          data <= 8'hC2;
+
+          state <= Wait4;
+        
+        end
+        
+        Wait4:
+        begin
+          
+          E <= 0;
+          
+          if (delay_count == 40) begin
+            state <= Input_Wait;
+            delay_count <= 0;
+          end else begin
+            delay_count <= delay_count + 1;
+          end             
+                     
+        end
+        
+        Input_Wait:
+        begin
+        
+          if (Key_Flag) begin
+                   
+            state <= Write_Input;
+          
+          end else begin
+          
+            state <= Input_Wait;
+            
+          end 
+        
+        end
+        
+        Write_Input:
+        begin
+        
+          RS <= 1;
+          E <= 1;
+          data <= Key_in;
+          
+          state <= Write_Delay2;
+        
+        end
+        
+        Write_Delay2:
+        begin
+        
+          E <= 0;
+          
+          if (delay_count == 26000) begin
+            state <= Input_Wait;
+            delay_count <= 0;
+          end else begin 
+            state <= Write_Delay2;
+            delay_count <= delay_count + 1;
+          end             
+        
+        end
+        
+      endcase
     
     end
     
-    
-
-assign LED1 = letter_pos;
-assign LED2 = RS;
-assign LED3 = data;
-
-
 endmodule
