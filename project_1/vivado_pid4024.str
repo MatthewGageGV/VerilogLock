@@ -151,3 +151,1085 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/GAGEMA/Documents/VerilogLock/project_1' since last save. INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.gen/sources_1'. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:16 . Memory (MB): peak = 1508.555 ; gain = 286.160 
+// [Engine Memory]: 1,157 MB (+5173kb) [00:00:26]
+// Project name: project_1; location: C:/Users/BERRINGB/Desktop/VerilogLock/project_1; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 146 MB (+18162kb) [00:00:31]
+// [GUI Memory]: 159 MB (+6131kb) [00:01:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,208 MB. GUI used memory: 100 MB. Current time: 11/25/23, 10:54:07 AM EST
+// Elapsed time: 69 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v)]", 1); // E
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), L1 : LCD (LCD.v)]", 10, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), L1 : LCD (LCD.v)]", 10, false, false, false, false, false, true); // E - Double Click
+// [Engine Memory]: 1,216 MB (+1386kb) [00:02:17]
+// Elapsed time: 12 seconds
+selectCodeEditor("LCD.v", 516, 295); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("LCD.v", 388, 561); // ad
+selectCodeEditor("LCD.v", 298, 536); // ad
+selectCodeEditor("LCD.v", 348, 569); // ad
+selectCodeEditor("LCD.v", 83, 620); // ad
+selectCodeEditor("LCD.v", 153, 617); // ad
+selectCodeEditor("LCD.v", 300, 514); // ad
+selectCodeEditor("LCD.v", 395, 486); // ad
+selectCodeEditor("LCD.v", 38, 588); // ad
+selectCodeEditor("LCD.v", 209, 656); // ad
+selectCodeEditor("LCD.v", 458, 543); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("LCD.v", 43, 494); // ad
+selectCodeEditor("LCD.v", 305, 627); // ad
+// [GUI Memory]: 172 MB (+4599kb) [00:03:40]
+selectCodeEditor("LCD.v", 50, 841); // ad
+selectCodeEditor("LCD.v", 227, 865); // ad
+selectCodeEditor("LCD.v", 37, 483); // ad
+selectCodeEditor("LCD.v", 287, 546); // ad
+// Elapsed time: 32 seconds
+selectCodeEditor("LCD.v", 171, 702); // ad
+selectCodeEditor("LCD.v", 148, 756); // ad
+selectCodeEditor("LCD.v", 195, 343); // ad
+selectCodeEditor("LCD.v", 180, 965); // ad
+selectCodeEditor("LCD.v", 182, 1065); // ad
+selectCodeEditor("LCD.v", 483, 876); // ad
+selectCodeEditor("LCD.v", 379, 1069); // ad
+selectCodeEditor("LCD.v", 32, 867); // ad
+// Elapsed time: 101 seconds
+selectCodeEditor("LCD.v", 37, 418); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD.v", 207, 275); // ad
+selectCodeEditor("LCD.v", 46, 309); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,251 MB. GUI used memory: 102 MB. Current time: 11/25/23, 11:00:02 AM EST
+// Elapsed time: 59 seconds
+selectCodeEditor("LCD.v", 137, 873); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 204, 1125); // ad
+selectCodeEditor("LCD.v", 215, 1103); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 3, 1206); // ad
+selectCodeEditor("LCD.v", 365, 1108); // ad
+// [Engine Memory]: 1,283 MB (+5921kb) [00:11:46]
+// Elapsed time: 229 seconds
+selectCodeEditor("LCD.v", 217, 939); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,283 MB. GUI used memory: 103 MB. Current time: 11/25/23, 11:04:22 AM EST
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+typeControlKey(null, null, 'z');
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 152, 716); // ad
+selectCodeEditor("LCD.v", 175, 743); // ad
+selectCodeEditor("LCD.v", 216, 770); // ad
+selectCodeEditor("LCD.v", 221, 761); // ad
+selectCodeEditor("LCD.v", 220, 778); // ad
+selectCodeEditor("LCD.v", 151, 763); // ad
+selectCodeEditor("LCD.v", 160, 782); // ad
+selectCodeEditor("LCD.v", 155, 793); // ad
+selectCodeEditor("LCD.v", 291, 784); // ad
+selectCodeEditor("LCD.v", 217, 791); // ad
+selectCodeEditor("LCD.v", 172, 814); // ad
+selectCodeEditor("LCD.v", 238, 823); // ad
+selectCodeEditor("LCD.v", 219, 822); // ad
+selectCodeEditor("LCD.v", 231, 834); // ad
+selectCodeEditor("LCD.v", 216, 847); // ad
+selectCodeEditor("LCD.v", 221, 867); // ad
+selectCodeEditor("LCD.v", 91, 961); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("LCD.v", 161, 901); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("LCD.v", 238, 888); // ad
+selectCodeEditor("LCD.v", 219, 406); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 81, 1048); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 304, 927); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("LCD.v", 213, 807); // ad
+selectCodeEditor("LCD.v", 285, 816); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("LCD.v", 181, 864); // ad
+selectCodeEditor("LCD.v", 352, 869); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("LCD.v", 319, 1064); // ad
+selectCodeEditor("LCD.v", 227, 1123); // ad
+selectCodeEditor("LCD.v", 134, 967); // ad
+// Elapsed time: 42 seconds
+selectCodeEditor("LCD.v", 190, 810); // ad
+selectCodeEditor("LCD.v", 287, 844); // ad
+selectCodeEditor("LCD.v", 221, 779); // ad
+selectCodeEditor("LCD.v", 95, 783); // ad
+selectCodeEditor("LCD.v", 106, 791); // ad
+selectCodeEditor("LCD.v", 401, 826); // ad
+selectCodeEditor("LCD.v", 225, 1035); // ad
+// Elapsed time: 137 seconds
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 78, 1158); // ad
+selectCodeEditor("LCD.v", 87, 1161); // ad
+selectCodeEditor("LCD.v", 108, 832); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 141, 1165); // ad
+selectCodeEditor("LCD.v", 125, 1162); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("LCD.v", 329, 985); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("LCD.v", 156, 967); // ad
+selectCodeEditor("LCD.v", 215, 980); // ad
+selectCodeEditor("LCD.v", 316, 955); // ad
+selectCodeEditor("LCD.v", 310, 940); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("LCD.v", 223, 988); // ad
+// Elapsed time: 13 seconds
+selectCodeEditor("LCD.v", 111, 533); // ad
+selectCodeEditor("LCD.v", 124, 588); // ad
+selectCodeEditor("LCD.v", 115, 536); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 134, 1132); // ad
+selectCodeEditor("LCD.v", 121, 1109); // ad
+selectCodeEditor("LCD.v", 87, 490); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 95, 1111); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 366, 827); // ad
+selectCodeEditor("LCD.v", 372, 838); // ad
+selectCodeEditor("LCD.v", 317, 850); // ad
+selectCodeEditor("LCD.v", 317, 831); // ad
+selectCodeEditor("LCD.v", 227, 864); // ad
+selectCodeEditor("LCD.v", 312, 983); // ad
+selectCodeEditor("LCD.v", 319, 859); // ad
+selectCodeEditor("LCD.v", 402, 959); // ad
+selectCodeEditor("LCD.v", 133, 992); // ad
+// Elapsed time: 151 seconds
+selectCodeEditor("LCD.v", 79, 382); // ad
+selectCodeEditor("LCD.v", 133, 402); // ad
+selectCodeEditor("LCD.v", 84, 393); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 106, 1012); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 66 seconds
+selectCodeEditor("LCD.v", 269, 893); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 124, 1000); // ad
+selectCodeEditor("LCD.v", 85, 418); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 103, 1046); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 145, 993); // ad
+selectCodeEditor("LCD.v", 350, 1164); // ad
+// Elapsed time: 31 seconds
+selectCodeEditor("LCD.v", 124, 495); // ad
+selectCodeEditor("LCD.v", 170, 496); // ad
+selectCodeEditor("LCD.v", 136, 491); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 397, 441); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 377, 1084); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 370, 1070); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("LCD.v", 347, 843); // ad
+selectCodeEditor("LCD.v", 88, 388); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 157, 1010); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 200, 1032); // ad
+selectCodeEditor("LCD.v", 246, 926); // ad
+// Elapsed time: 13 seconds
+selectCodeEditor("LCD.v", 273, 969); // ad
+selectCodeEditor("LCD.v", 263, 316); // ad
+selectCodeEditor("LCD.v", 269, 964); // ad
+// Elapsed time: 81 seconds
+selectCodeEditor("LCD.v", 433, 748); // ad
+selectCodeEditor("LCD.v", 496, 595); // ad
+selectCodeEditor("LCD.v", 261, 592); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("LCD.v", 84, 415); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 160, 1045); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 344, 895); // ad
+selectCodeEditor("LCD.v", 429, 862); // ad
+selectCodeEditor("LCD.v", 421, 921); // ad
+selectCodeEditor("LCD.v", 418, 941); // ad
+selectCodeEditor("LCD.v", 406, 997); // ad
+selectCodeEditor("LCD.v", 204, 1050); // ad
+// Elapsed time: 86 seconds
+selectCodeEditor("LCD.v", 157, 744); // ad
+selectCodeEditor("LCD.v", 374, 911); // ad
+selectCodeEditor("LCD.v", 254, 1056); // ad
+// Elapsed time: 83 seconds
+selectCodeEditor("LCD.v", 514, 582); // ad
+// Elapsed time: 116 seconds
+selectCodeEditor("LCD.v", 139, 1006); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 86, 1006); // ad
+selectCodeEditor("LCD.v", 174, 1028); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("LCD.v", 173, 864); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("LCD.v", 417, 863); // ad
+selectCodeEditor("LCD.v", 311, 941); // ad
+selectCodeEditor("LCD.v", 182, 994); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD.v", 515, 389); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("LCD.v", 505, 418); // ad
+// Elapsed time: 180 seconds
+selectCodeEditor("LCD.v", 279, 438); // ad
+// Elapsed time: 21 seconds
+selectCodeEditor("LCD.v", 342, 432); // ad
+selectCodeEditor("LCD.v", 351, 433); // ad
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 27 seconds
+selectCodeEditor("LCD.v", 284, 486); // ad
+selectCodeEditor("LCD.v", 222, 479); // ad
+// Elapsed time: 28 seconds
+selectCodeEditor("LCD.v", 572, 220); // ad
+selectCodeEditor("LCD.v", 334, 483); // ad
+selectCodeEditor("LCD.v", 365, 489); // ad
+selectCodeEditor("LCD.v", 328, 482); // ad
+selectCodeEditor("LCD.v", 339, 518); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("LCD.v", 144, 216); // ad
+// Elapsed time: 45 seconds
+selectCodeEditor("LCD.v", 226, 1020); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,287 MB. GUI used memory: 103 MB. Current time: 11/25/23, 11:34:23 AM EST
+// Elapsed time: 57 seconds
+selectCodeEditor("LCD.v", 104, 166); // ad
+selectCodeEditor("LCD.v", 205, 142); // ad
+selectCodeEditor("LCD.v", 196, 150); // ad
+selectCodeEditor("LCD.v", 202, 262); // ad
+// Elapsed time: 16 seconds
+selectCodeEditor("LCD.v", 188, 980); // ad
+selectCodeEditor("LCD.v", 176, 1007); // ad
+selectCodeEditor("LCD.v", 104, 215); // ad
+selectCodeEditor("LCD.v", 126, 220); // ad
+selectCodeEditor("LCD.v", 112, 221); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 125, 1029); // ad
+selectCodeEditor("LCD.v", 133, 1005); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+typeControlKey(null, null, 'z');
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 171, 1041); // ad
+selectCodeEditor("LCD.v", 88, 1020); // ad
+selectCodeEditor("LCD.v", 180, 1036); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("LCD.v", 182, 818); // ad
+selectCodeEditor("LCD.v", 175, 810); // ad
+selectCodeEditor("LCD.v", 220, 862); // ad
+selectCodeEditor("LCD.v", 269, 860); // ad
+selectCodeEditor("LCD.v", 271, 860); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD.v", 215, 894); // ad
+selectCodeEditor("LCD.v", 219, 917); // ad
+selectCodeEditor("LCD.v", 306, 893); // ad
+selectCodeEditor("LCD.v", 148, 841); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 151, 886); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 133, 888); // ad
+selectCodeEditor("LCD.v", 141, 888); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD.v", 176, 945); // ad
+// Elapsed time: 32 seconds
+selectCodeEditor("LCD.v", 229, 939); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("LCD.v", 221, 994); // ad
+selectCodeEditor("LCD.v", 237, 955); // ad
+selectCodeEditor("LCD.v", 132, 236); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 151, 971); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 24 seconds
+selectCodeEditor("LCD.v", 125, 1043); // ad
+selectCodeEditor("LCD.v", 146, 1030); // ad
+// Elapsed time: 136 seconds
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 174, 1154); // ad
+selectCodeEditor("LCD.v", 174, 1131); // ad
+selectCodeEditor("LCD.v", 171, 1194); // ad
+selectCodeEditor("LCD.v", 234, 1235); // ad
+selectCodeEditor("LCD.v", 261, 1238); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("LCD.v", 121, 920); // ad
+selectCodeEditor("LCD.v", 119, 985); // ad
+selectCodeEditor("LCD.v", 82, 1018); // ad
+selectCodeEditor("LCD.v", 77, 1009); // ad
+selectCodeEditor("LCD.v", 90, 1003); // ad
+selectCodeEditor("LCD.v", 153, 1013); // ad
+selectCodeEditor("LCD.v", 270, 903); // ad
+selectCodeEditor("LCD.v", 262, 892); // ad
+selectCodeEditor("LCD.v", 113, 1062); // ad
+selectCodeEditor("LCD.v", 120, 1031); // ad
+// Elapsed time: 75 seconds
+selectCodeEditor("LCD.v", 263, 939); // ad
+selectCodeEditor("LCD.v", 237, 968); // ad
+selectCodeEditor("LCD.v", 230, 990); // ad
+selectCodeEditor("LCD.v", 110, 260); // ad
+selectCodeEditor("LCD.v", 84, 202); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("LCD.v", 109, 1051); // ad
+selectCodeEditor("LCD.v", 122, 1028); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 39 seconds
+selectCodeEditor("LCD.v", 373, 869); // ad
+// Elapsed time: 36 seconds
+selectCodeEditor("LCD.v", 88, 715); // ad
+selectCodeEditor("LCD.v", 156, 1006); // ad
+selectCodeEditor("LCD.v", 157, 1037); // ad
+selectCodeEditor("LCD.v", 122, 1059); // ad
+// Elapsed time: 79 seconds
+selectCodeEditor("LCD.v", 443, 68); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("LCD.v", 44, 187); // ad
+// Elapsed time: 40 seconds
+selectCodeEditor("LCD.v", 120, 964); // ad
+selectCodeEditor("LCD.v", 125, 993); // ad
+// Elapsed time: 44 seconds
+selectCodeEditor("LCD.v", 553, 78); // ad
+selectCodeEditor("LCD.v", 550, 72); // ad
+selectCodeEditor("LCD.v", 331, 111); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("LCD.v", 220, 933); // ad
+selectCodeEditor("LCD.v", 110, 314); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 201, 934); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("LCD.v", 346, 943); // ad
+// Elapsed time: 67 seconds
+selectCodeEditor("LCD.v", 109, 878); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD.v", 132, 955); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("LCD.v", 358, 971); // ad
+// Elapsed time: 166 seconds
+selectCodeEditor("LCD.v", 332, 986); // ad
+// Elapsed time: 36 seconds
+selectCodeEditor("LCD.v", 88, 284); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 144, 867); // ad
+// Elapsed time: 31 seconds
+selectCodeEditor("LCD.v", 132, 865); // ad
+selectCodeEditor("LCD.v", 145, 863); // ad
+selectCodeEditor("LCD.v", 96, 986); // ad
+selectCodeEditor("LCD.v", 91, 1034); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 212, 970); // ad
+// Elapsed time: 22 seconds
+selectCodeEditor("LCD.v", 315, 871); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:02m:57s
+// Elapsed Time for: 'L.f': 01h:02m:59s
+// Elapsed time: 105 seconds
+selectCodeEditor("LCD.v", 234, 333); // ad
+selectCodeEditor("LCD.v", 131, 532); // ad
+selectCodeEditor("LCD.v", 357, 536); // ad
+selectCodeEditor("LCD.v", 134, 545); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+selectCodeEditor("LCD.v", 119, 635); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:05m:39s
+// Elapsed Time for: 'L.f': 01h:05m:41s
+// Elapsed time: 234 seconds
+selectCodeEditor("LCD.v", 155, 866); // ad
+selectCodeEditor("LCD.v", 42, 868); // ad
+typeControlKey((HResource) null, "LCD.v", 'c'); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,287 MB. GUI used memory: 85 MB. Current time: 11/25/23, 12:04:23 PM EST
+// Elapsed time: 155 seconds
+selectCodeEditor("LCD.v", 121, 944); // ad
+typeControlKey((HResource) null, "LCD.v", 'v'); // ad
+selectCodeEditor("LCD.v", 26, 806); // ad
+selectCodeEditor("LCD.v", 42, 791); // ad
+selectCodeEditor("LCD.v", 21, 836); // ad
+selectCodeEditor("LCD.v", 20, 865); // ad
+selectCodeEditor("LCD.v", 18, 732); // ad
+selectCodeEditor("LCD.v", 19, 796); // ad
+selectCodeEditor("LCD.v", 25, 831); // ad
+selectCodeEditor("LCD.v", 22, 890); // ad
+selectCodeEditor("LCD.v", 16, 933); // ad
+selectCodeEditor("LCD.v", 24, 969); // ad
+selectCodeEditor("LCD.v", 24, 998); // ad
+selectCodeEditor("LCD.v", 20, 1050); // ad
+selectCodeEditor("LCD.v", 25, 1038); // ad
+selectCodeEditor("LCD.v", 23, 1087); // ad
+selectCodeEditor("LCD.v", 24, 1107); // ad
+selectCodeEditor("LCD.v", 22, 1138); // ad
+selectCodeEditor("LCD.v", 270, 538); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:12m:26s
+// Elapsed Time for: 'L.f': 01h:12m:28s
+// Elapsed time: 199 seconds
+selectCodeEditor("LCD.v", 19, 1233); // ad
+// Elapsed time: 52 seconds
+selectCodeEditor("LCD.v", 484, 632); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:16m:34s
+// Elapsed Time for: 'L.f': 01h:16m:36s
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 1); // o
+// Elapsed time: 1077 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 1); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Decoder (LCD_dec.v)]", 11, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Decoder (LCD_dec.v)]", 11, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Decoder (LCD_dec.v)]", 11, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 112 seconds
+selectCodeEditor("LCD_dec.v", 335, 237); // ad
+selectCodeEditor("LCD_dec.v", 251, 355); // ad
+selectCodeEditor("LCD_dec.v", 130, 151); // ad
+selectCodeEditor("LCD_dec.v", 97, 181); // ad
+selectCodeEditor("LCD_dec.v", 129, 69); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("LCD_dec.v", 101, 92); // ad
+selectCodeEditor("LCD_dec.v", 105, 91); // ad
+selectCodeEditor("LCD_dec.v", 105, 91); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'c'); // ad
+selectCodeEditor("LCD_dec.v", 46, 163); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'v'); // ad
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("LCD_dec.v", 52, 188); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'v'); // ad
+selectCodeEditor("LCD_dec.v", 118, 105); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'c'); // ad
+selectCodeEditor("LCD_dec.v", 50, 154); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'v'); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("LCD_dec.v", 243, 186); // ad
+selectCodeEditor("LCD_dec.v", 217, 198); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("LCD_dec.v", 3, 95); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:38m:46s
+selectCodeEditor("LCD_dec.v", 234, 186); // ad
+// Elapsed Time for: 'L.f': 01h:38m:48s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:38m:52s
+// Elapsed Time for: 'L.f': 01h:38m:54s
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("LCD_dec.v", 2, 95); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:39m:10s
+// Elapsed Time for: 'L.f': 01h:39m:12s
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("LCD_Keypad_Top.v", 125, 780); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1050, 765); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1017, 759); // ad
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), K1 : Keypad (Keypad.v)]", 9, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), K1 : Keypad (Keypad.v)]", 9, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("Keypad.v", 197, 689); // ad
+selectCodeEditor("Keypad.v", 408, 690); // ad
+selectCodeEditor("Keypad.v", 356, 684); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("Keypad.v", 262, 274); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("Keypad.v", 83, 278); // ad
+selectCodeEditor("Keypad.v", 72, 287); // ad
+selectCodeEditor("Keypad.v", 72, 287); // ad
+typeControlKey((HResource) null, "Keypad.v", 'c'); // ad
+selectCodeEditor("Keypad.v", 564, 63); // ad
+typeControlKey((HResource) null, "Keypad.v", 'v'); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("Keypad.v", 142, 196); // ad
+selectCodeEditor("Keypad.v", 139, 216); // ad
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 17 seconds
+selectCodeEditor("Keypad.v", 661, 65); // ad
+selectCodeEditor("Keypad.v", 679, 71); // ad
+selectCodeEditor("Keypad.v", 85, 338); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,295 MB. GUI used memory: 86 MB. Current time: 11/25/23, 12:34:23 PM EST
+selectCodeEditor("Keypad.v", 88, 252); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("Keypad.v", 460, 141); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("Keypad.v", 184, 228); // ad
+selectCodeEditor("Keypad.v", 10, 160); // ad
+typeControlKey((HResource) null, "Keypad.v", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:42m:02s
+// Elapsed Time for: 'L.f': 01h:42m:04s
+selectCodeEditor("Keypad.v", 99, 414); // ad
+// Elapsed time: 93 seconds
+selectCodeEditor("Keypad.v", 150, 1251); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:44m:20s
+// Elapsed Time for: 'L.f': 01h:44m:22s
+// Elapsed time: 61 seconds
+selectCodeEditor("Keypad.v", 667, 77); // ad
+selectCodeEditor("Keypad.v", 666, 59); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("Keypad.v", 3, 198); // ad
+typeControlKey((HResource) null, "Keypad.v", 'c'); // ad
+selectCodeEditor("Keypad.v", 247, 174); // ad
+selectCodeEditor("Keypad.v", 247, 190); // ad
+typeControlKey((HResource) null, "Keypad.v", 'v'); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("Keypad.v", 278, 1239); // ad
+// Elapsed time: 28 seconds
+selectCodeEditor("Keypad.v", 598, 54); // ad
+selectCodeEditor("Keypad.v", 854, 111); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:46m:00s
+selectCodeEditor("Keypad.v", 88, 171); // ad
+// Elapsed Time for: 'L.f': 01h:46m:02s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:46m:06s
+// Elapsed Time for: 'L.f': 01h:46m:08s
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+selectCodeEditor("LCD_Keypad_Top.v", 1416, 715); // ad
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+// Elapsed time: 12 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 133, 387); // ad
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "LCD_Keypad_Top.v", 'c'); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1531, 716); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1534, 716); // ad
+typeControlKey((HResource) null, "LCD_Keypad_Top.v", 'v'); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+selectCodeEditor("LCD_Keypad_Top.v", 1018, 772); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 195, 385); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 1628, 721); // ad
+// Elapsed time: 23 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 1644, 711); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1101, 771); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 1289, 624); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+selectCodeEditor("LCD_Keypad_Top.v", 193, 379); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1108, 760); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1591, 712); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1612, 712); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1599, 713); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1290, 775); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1293, 761); // ad
+// Elapsed time: 14 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 1638, 730); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1629, 717); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1639, 717); // ad
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+selectCodeEditor("LCD_Keypad_Top.v", 1741, 710); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1666, 708); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 226, 464); // ad
+typeControlKey((HResource) null, "LCD_Keypad_Top.v", 'c'); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1763, 716); // ad
+typeControlKey((HResource) null, "LCD_Keypad_Top.v", 'v'); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 189, 459); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1821, 720); // ad
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+// Elapsed time: 13 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 257, 472); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 197, 470); // ad
+// Elapsed time: 24 seconds
+typeControlKey((HResource) null, "LCD_Keypad_Top.v", 'c'); // ad
+typeControlKey((HResource) null, "LCD_Keypad_Top.v", 'v'); // ad
+selectCodeEditor("LCD_Keypad_Top.v", 1250, 758); // ad
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 1); // o
+selectCodeEditor("LCD.v", 335, 115); // ad
+selectCodeEditor("LCD.v", 371, 98); // ad
+selectCodeEditor("LCD.v", 344, 114); // ad
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("LCD.v", 464, 104); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:52m:23s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+// Elapsed Time for: 'L.f': 01h:52m:25s
+selectCodeEditor("LCD_Keypad_Top.v", 751, 745); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:52m:33s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:52m:35s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01h:52m:37s
+// Elapsed Time for: 'L.f': 01h:52m:39s
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp with file C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cw
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat Nov 25 12:45:42 2023] Launched synth_1... Run output will be captured here: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/runme.log [Sat Nov 25 12:45:42 2023] Launched impl_1... Run output will be captured here: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,312 MB. GUI used memory: 88 MB. Current time: 11/25/23, 12:53:14 PM EST
+// Elapsed time: 455 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // f
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 27, false); // f
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,447 MB. GUI used memory: 88 MB. Current time: 11/25/23, 12:53:29 PM EST
+// [Engine Memory]: 1,468 MB (+127265kb) [02:00:57]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,748 MB. GUI used memory: 88 MB. Current time: 11/25/23, 12:53:36 PM EST
+// [Engine Memory]: 1,769 MB (+238850kb) [02:01:03]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  2123 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1902.559 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2023.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc] Finished Parsing XDC File [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/constrs_1/new/pins.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1992.109 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2117.430 ; gain = 563.742 
+// Device view-level: 0.0
+// [Engine Memory]: 1,866 MB (+8447kb) [02:01:06]
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 20 seconds
+dismissDialog("Open Synthesized Design"); // bq
+// [GUI Memory]: 185 MB (+5052kb) [02:01:08]
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // G
+// [Engine Memory]: 1,990 MB (+32045kb) [02:01:15]
+// [Engine Memory]: 2,283 MB (+202648kb) [02:01:16]
+// RouteApi::initDelayMediator elapsed time: 9.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [GUI Memory]: 204 MB (+9668kb) [02:01:16]
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 14); // f
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 14); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 2,283 MB. GUI used memory: 117 MB. Current time: 11/25/23, 12:53:54 PM EST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 17, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a
+dismissDialog("Close Design"); // a.a
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,285 MB. GUI used memory: 95 MB. Current time: 11/25/23, 12:54:02 PM EST
+// Engine heap size: 2,287 MB. GUI used memory: 96 MB. Current time: 11/25/23, 12:54:02 PM EST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bq
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,384 MB. GUI used memory: 96 MB. Current time: 11/25/23, 12:54:04 PM EST
+// [Engine Memory]: 2,427 MB (+31593kb) [02:01:31]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1621 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2571.195 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2023.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2679.508 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2679.508 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2679.508 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dA' command handler elapsed time: 15 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1086 ms.
+// [GUI Memory]: 242 MB (+29303kb) [02:01:37]
+dismissDialog("Open Implemented Design"); // bq
+// Elapsed time: 74 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Methodology Violations"); // aO
+// [GUI Memory]: 256 MB (+2062kb) [02:02:53]
+selectComboBox(RDIResource.LayoutComboBox_SELECT_OR_SAVE_WINDOW_LAYOUT, "Default Layout", 0); // h
+// Device view-level: 0.0
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 12 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 1107, 436, 2880, 1394, false, false, false, true, false); // j - Popup Trigger
+// Elapsed time: 15 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 4); // o
+selectCodeEditor("LCD_Keypad_Top.v", 448, 743); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 3); // o
+selectCodeEditor("LCD_dec.v", 232, 355); // ad
+// Elapsed time: 40 seconds
+selectCodeEditor("LCD_dec.v", 237, 244); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02h:04m:09s
+// Elapsed Time for: 'L.f': 02h:04m:11s
+selectCodeEditor("LCD_dec.v", 248, 137); // ad
+selectCodeEditor("LCD_dec.v", 152, 128, false, false, false, true, false); // ad - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ao
+selectCodeEditor("LCD_dec.v", 323, 161); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'v'); // ad
+selectCodeEditor("LCD_dec.v", 51, 188); // ad
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "LCD_dec.v", 'c'); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'v'); // ad
+selectCodeEditor("LCD_dec.v", 492, 448); // ad
+// Elapsed time: 100 seconds
+typeControlKey((HResource) null, "LCD_dec.v", 'c'); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("LCD_dec.v", 347, 328); // ad
+// Elapsed time: 132 seconds
+selectCodeEditor("LCD_dec.v", 361, 476); // ad
+// Elapsed time: 13 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+// Elapsed time: 57 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), S1 : Seg_Decoder (Seg_Decoder.v)]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), S1 : Seg_Decoder (Seg_Decoder.v)]", 5, false, false, false, false, false, true); // E - Double Click
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 3); // o
+selectCodeEditor("LCD_dec.v", 434, 368); // ad
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a
+dismissDialog("Text Changed"); // h
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), D1 : LCD_Decoder (LCD_dec.v)]", 10, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LCD_Keypad_Top (LCD_Keypad_Top.v), D1 : LCD_Decoder (LCD_dec.v)]", 10, false, false, false, false, false, true); // E - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Seg_Decoder.v", 5); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_dec.v", 6); // o
+selectCodeEditor("LCD_dec.v", 151, 194); // ad
+selectCodeEditor("LCD_dec.v", 113, 217); // ad
+selectCodeEditor("LCD_dec.v", 255, 113); // ad
+selectCodeEditor("LCD_dec.v", 360, 137); // ad
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "LCD_dec.v", 'c'); // ad
+typeControlKey((HResource) null, "LCD_dec.v", 'v'); // ad
+// Elapsed time: 16 seconds
+selectCodeEditor("LCD_dec.v", 384, 405); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02h:12m:09s
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// Elapsed Time for: 'L.f': 02h:12m:11s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+selectCodeEditor("LCD_Keypad_Top.v", 214, 453); // ad
+// Elapsed time: 25 seconds
+selectCodeEditor("LCD_Keypad_Top.v", 406, 397); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02h:12m:51s
+// Elapsed Time for: 'L.f': 02h:12m:53s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp with file C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'ct' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cw
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sat Nov 25 13:06:00 2023] Launched synth_1... Run output will be captured here: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/runme.log [Sat Nov 25 13:06:00 2023] Launched impl_1... Run output will be captured here: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 182 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,517 MB. GUI used memory: 107 MB. Current time: 11/25/23, 1:09:03 PM EST
+// Engine heap size: 2,517 MB. GUI used memory: 108 MB. Current time: 11/25/23, 1:09:03 PM EST
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,517 MB. GUI used memory: 110 MB. Current time: 11/25/23, 1:09:05 PM EST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1804 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2788.574 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2023.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2788.574 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2788.574 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Reloading"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 28, false); // f
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 55 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j
+// Elapsed time: 122 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD_Keypad_Top.v", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LCD.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o
+// Device view-level: 0.0
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // G
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Keypad.v", 3); // o

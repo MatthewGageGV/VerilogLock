@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Sat Nov 25 13:08:36 2023
+| Date         : Sat Nov 25 14:04:05 2023
 | Host         : WINLAB-EGR_252 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file LCD_Keypad_Top_methodology_drc_routed.rpt -pb LCD_Keypad_Top_methodology_drc_routed.pb -rpx LCD_Keypad_Top_methodology_drc_routed.rpx
 | Design       : LCD_Keypad_Top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 159
+             Violations found: 166
 +-----------+------------------+----------------------------------+------------+
 | Rule      | Severity         | Description                      | Violations |
 +-----------+------------------+----------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell      | 155        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell      | 162        |
 | HPDR-1    | Warning          | Port pin direction inconsistency | 4          |
 +-----------+------------------+----------------------------------+------------+
 
@@ -760,50 +760,85 @@ Related violations: <none>
 
 TIMING-17#146 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/letter_pos_reg[0]/C is not reached by a timing clock
+The clock pin L1/key_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/letter_pos_reg[1]/C is not reached by a timing clock
+The clock pin L1/key_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/letter_pos_reg[2]/C is not reached by a timing clock
+The clock pin L1/key_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#149 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/letter_pos_reg[3]/C is not reached by a timing clock
+The clock pin L1/letter_pos_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#150 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/state_reg[0]/C is not reached by a timing clock
+The clock pin L1/letter_pos_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#151 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/state_reg[1]/C is not reached by a timing clock
+The clock pin L1/letter_pos_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/state_reg[2]/C is not reached by a timing clock
+The clock pin L1/letter_pos_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#153 Critical Warning
 Non-clocked sequential cell  
-The clock pin L1/state_reg[3]/C is not reached by a timing clock
+The clock pin L1/letter_pos_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#154 Critical Warning
 Non-clocked sequential cell  
-The clock pin T1/count_reg[0]/C is not reached by a timing clock
+The clock pin L1/letter_pos_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#155 Critical Warning
+Non-clocked sequential cell  
+The clock pin L1/letter_pos_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Critical Warning
+Non-clocked sequential cell  
+The clock pin L1/letter_pos_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Critical Warning
+Non-clocked sequential cell  
+The clock pin L1/state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Critical Warning
+Non-clocked sequential cell  
+The clock pin L1/state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Critical Warning
+Non-clocked sequential cell  
+The clock pin L1/state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Critical Warning
+Non-clocked sequential cell  
+The clock pin L1/state_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Critical Warning
+Non-clocked sequential cell  
+The clock pin T1/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Critical Warning
 Non-clocked sequential cell  
 The clock pin T1/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
