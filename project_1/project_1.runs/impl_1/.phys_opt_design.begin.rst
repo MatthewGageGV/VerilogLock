@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command=".planAhead." Owner="BERRINGB" Host="WINLAB-EGR_252" Pid="584">
-    </Process>
-</ProcessHandle>
