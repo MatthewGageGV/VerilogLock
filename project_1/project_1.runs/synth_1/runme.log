@@ -14,7 +14,7 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source LCD_Keypad_Top.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 460.363 ; gain = 181.480
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 459.898 ; gain = 183.043
 Command: read_checkpoint -auto_incremental -incremental C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -27,11 +27,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10556
+INFO: [Synth 8-7075] Helper process launched with PID 7884
 WARNING: [Synth 8-9400] empty statement in sequential block [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:48]
 WARNING: [Synth 8-9926] potential always loop found [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:39]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.016 ; gain = 411.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.211 ; gain = 411.785
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'LCD_Keypad_Top' [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Clk_Divider_1KHz' [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v:3]
@@ -58,26 +58,23 @@ INFO: [Synth 8-6157] synthesizing module 'LCD_Decoder' [C:/Users/GAGEMA/VerilogL
 INFO: [Synth 8-226] default block is never used [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'LCD_Decoder' (0#1) [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:3]
 INFO: [Synth 8-6157] synthesizing module 'LCD' [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:267]
 INFO: [Synth 8-6155] done synthesizing module 'LCD' (0#1) [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Password' [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Password.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Password.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'Password' (0#1) [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Password.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'LCD_Keypad_Top' (0#1) [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v:3]
-WARNING: [Synth 8-7137] Register clk_divide_1MHz_reg in module LCD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:75]
-WARNING: [Synth 8-6014] Unused sequential element digit4_reg was removed.  [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Password.v:33]
+WARNING: [Synth 8-7137] Register clk_divide_1MHz_reg in module LCD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v:78]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.438 ; gain = 505.883
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.207 ; gain = 505.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.438 ; gain = 505.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.207 ; gain = 505.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.438 ; gain = 505.883
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.207 ; gain = 505.781
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1370.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1370.207 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -88,47 +85,31 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/LCD_Keypad_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1470.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1475.668 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1470.543 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1475.668 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Password'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0000 |                             0000
-                     ONE |                             0001 |                             0001
-                   WAIT1 |                             0010 |                             0111
-                     TWO |                             0011 |                             0010
-                   WAIT2 |                             0100 |                             1000
-                   THREE |                             0101 |                             0011
-                   WAIT3 |                             0110 |                             1001
-                    FOUR |                             0111 |                             0100
-                UNLOCKED |                             1000 |                             0110
-                  LOCKED |                             1001 |                             0101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Password'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -146,11 +127,10 @@ Detailed RTL Component Info :
 	               28 Bit    Registers := 1     
 	               16 Bit    Registers := 3     
 	                8 Bit    Registers := 2     
-	                5 Bit    Registers := 3     
 	                4 Bit    Registers := 7     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input   28 Bit        Muxes := 1     
 	   2 Input   16 Bit        Muxes := 6     
@@ -159,18 +139,16 @@ Detailed RTL Component Info :
 	  16 Input    8 Bit        Muxes := 2     
 	   4 Input    7 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 4     
 	   5 Input    4 Bit        Muxes := 4     
 	   3 Input    4 Bit        Muxes := 1     
-	  10 Input    4 Bit        Muxes := 2     
-	  10 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 2     
 	  16 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 15    
+	   2 Input    1 Bit        Muxes := 17    
 	   5 Input    1 Bit        Muxes := 2     
-	   4 Input    1 Bit        Muxes := 6     
-	  16 Input    1 Bit        Muxes := 8     
-	  10 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 8     
+	  16 Input    1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -189,25 +167,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design LCD_Keypad_Top has port R_W driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -225,37 +203,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -272,41 +250,41 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     3|
-|2     |CARRY4 |    32|
-|3     |LUT1   |     4|
-|4     |LUT2   |    27|
-|5     |LUT3   |    29|
-|6     |LUT4   |    48|
-|7     |LUT5   |    78|
-|8     |LUT6   |    93|
+|2     |CARRY4 |    26|
+|3     |LUT1   |     5|
+|4     |LUT2   |    28|
+|5     |LUT3   |    30|
+|6     |LUT4   |    45|
+|7     |LUT5   |    60|
+|8     |LUT6   |    87|
 |9     |MUXF7  |     7|
 |10    |FDCE   |    45|
-|11    |FDRE   |   157|
+|11    |FDRE   |   115|
 |12    |FDSE   |     1|
 |13    |IBUF   |     6|
 |14    |OBUF   |    29|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1470.543 ; gain = 505.883
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1470.543 ; gain = 605.988
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 1475.668 ; gain = 505.781
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1475.668 ; gain = 611.242
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1470.543 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1475.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1475.668 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: ee92b5b4
+Synth Design complete | Checksum: 99c8578f
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 1470.543 ; gain = 985.359
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 1475.668 ; gain = 990.941
 INFO: [Common 17-1381] The checkpoint 'C:/Users/GAGEMA/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file LCD_Keypad_Top_utilization_synth.rpt -pb LCD_Keypad_Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 15:37:18 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 16:34:31 2023...

@@ -1,16 +1,19 @@
 `timescale 1ns / 1ps
 
-module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
+module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
 
     input clk, reset, Key_Flag;
     input [7:0] Key_in;
     output [7:0] data;
     output E, RS, R_W;
+    output [2:0] RGB;
     
     reg [27:0] clkcount;
     reg clk_divide_1MHz;
     reg [15:0] delay_count;
     reg [2:0] key_count;
+    reg pass;
+    reg[2:0] RGB;
     
     parameter [3:0] Initialize          = 1,
                     Function_Set        = 2,
@@ -261,6 +264,40 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
           
             if (key_count < 4) begin        
                 state <= Write_Input;
+                case (key_count)
+                    0: begin
+                        if (Key_in == 8'h31) begin
+                            pass <= 1;
+                        end
+                        else begin
+                            pass <= 0;
+                        end
+                    end
+                    1: begin
+                        if ((Key_in == 8'h32) && pass == 1) begin
+                            pass <= 1;
+                        end
+                        else begin
+                            pass <= 0;
+                        end
+                    end
+                    2: begin
+                        if ((Key_in == 8'h33) && pass == 1) begin
+                            pass <= 1;
+                        end
+                        else begin
+                            pass <= 0;
+                        end
+                    end
+                    3: begin
+                        if ((Key_in == 8'h34) && pass == 1) begin
+                            pass <= 1;
+                        end
+                        else begin
+                            pass <= 0;
+                        end
+                    end
+                endcase
             end else begin
                 state <= End;
             end
@@ -290,7 +327,12 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
           E <= 0;
           
           if (delay_count == 26000) begin
-            state <= Input_Wait;
+            if (key_count < 4) begin
+                state <= Input_Wait;
+            end
+            else begin
+                state <= End;
+            end
             delay_count <= 0;
           end else begin 
             state <= Write_Delay2;
@@ -299,8 +341,15 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in);
         
         end
         
-        End:
+        End: begin
           state <= End;
+          if (pass) begin
+            RGB <= 3'b100; // Green
+          end
+          else begin
+            RGB <= 3'b010; // Red
+          end
+        end
         
       endcase
       

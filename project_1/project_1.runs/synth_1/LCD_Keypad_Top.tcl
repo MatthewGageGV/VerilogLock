@@ -70,6 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 2
+set_param synth.incrementalSynthesisCache C:/Users/GAGEMA/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9720-WINLAB-EGR_089/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -91,7 +96,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v
   C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v
   C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v
-  C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Password.v
   C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v
   C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v
   C:/Users/GAGEMA/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v

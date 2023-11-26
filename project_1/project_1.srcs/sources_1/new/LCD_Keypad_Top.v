@@ -30,7 +30,7 @@ Seg_Decoder         S3  (.display_value(display_2), .segment_out(seg2));
 Seg_Decoder         S4  (.display_value(display_3), .segment_out(seg3));
 Keypad              K1  (.clk(clk), .Row(row), .Col(col), .Out0(display_0), .Out1(display_1), .Out2(display_2), .Out3(display_3), .Flag_out(Key_Flag), .Key_out(Key_out));
 LCD_Decoder         D1  (.decode_in(Key_out), .decode_out(decode_out));
-LCD                 L1  (.clk(clk), .reset(reset), .data(LCD_Out), .RS(RS), .R_W(R_W), .E(E), .Key_Flag(Key_Flag), .Key_in(decode_out));
-Password            P1  (.clk(clk), .data_in(Key_out), .key_flag(Key_Flag), .reset(reset), .RGB(RGB));
+LCD                 L1  (.clk(clk), .reset(reset), .data(LCD_Out), .RS(RS), .R_W(R_W), .E(E), .Key_Flag(Key_Flag), .Key_in(decode_out), .RGB(RGB));
+
 
 endmodule

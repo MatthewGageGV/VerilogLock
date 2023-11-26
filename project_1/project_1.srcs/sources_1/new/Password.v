@@ -23,11 +23,21 @@ reg[3:0] state = IDLE;
 reg[22:0] count = 23'h0;
 
 always @(posedge clk) begin
+    if (reset) begin
+        state <= IDLE;
+        digit1 <= 0;
+        digit2 <= 0;
+        digit3 <= 0;
+        digit4 <= 0;
+    end
     case (state)
         
         IDLE: begin
             if (reset) state <= IDLE;
-            else if (key_flag) state <= ONE;
+            else if (key_flag) begin
+                state <= ONE;
+                digit1 <= data_in;
+            end
             else begin
                 RGB <= 3'b000; // OFF
                 digit1 <= 0; digit2 <= 0; digit3 <= 0; digit4 <= 0;
@@ -35,28 +45,33 @@ always @(posedge clk) begin
         end
         
         ONE: begin
-            digit1 = data_in;
             if (reset) state <= IDLE;
-            else if (key_flag) state <= WAIT1;
+            else if (key_flag) begin
+                state <= WAIT1;
+                digit2 <= data_in;
+            end
             else state <= ONE;
         end
         
         TWO: begin
-            digit2 = data_in;
             if (reset) state <= IDLE;
-            else if (key_flag) state <= WAIT2;
+            else if (key_flag) begin
+                state <= WAIT2;
+                digit3 <= data_in;
+            end
             else state <= TWO;
         end
         
         THREE: begin
-            digit3 = data_in;
             if (reset) state <= IDLE;
-            else if (key_flag) state <= WAIT3;
+            else if (key_flag) begin
+                state <= WAIT3;
+                digit4 <= data_in;
+            end
             else state <= THREE;
         end
         
         FOUR: begin
-            digit4 = data_in;
             if (reset) state <= IDLE;
             else if ((digit1 == 4'h1) && (digit2 == 4'h2) && (digit3 == 4'h3) && (digit4 == 4'h4)) state <= UNLOCKED;
             else state <= LOCKED;
@@ -64,7 +79,7 @@ always @(posedge clk) begin
         
         LOCKED: begin
             if (reset) state <= IDLE;
-            else RGB <= 3'b100; // RED
+            else RGB <= 3'b101; // Purple
         end
         
         UNLOCKED: begin
