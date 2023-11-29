@@ -1,0 +1,85 @@
+[33mcommit 3aac015b35c926a6b4f2ce4551e7ff306605c2cb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Sun Nov 26 16:43:52 2023 -0500
+
+    working lock (password is 1234)
+
+[33mcommit edc5c6c3e16451195b8b30ac67921ba73ef06a85[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Sun Nov 26 15:38:32 2023 -0500
+
+    updated pins
+
+[33mcommit e8848f52612b0716aab720db9ab5bd01c2e32aa1[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Sun Nov 26 15:34:51 2023 -0500
+
+    updated top
+
+[33mcommit 554323be54f242ce55693ef680d7ca24b9de1ee5[m
+Merge: 563fdf0 6573903
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Sun Nov 26 15:22:05 2023 -0500
+
+    password.v file
+
+[33mcommit 563fdf0bc10d805aaf6409e70b731d09653854e2[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Sun Nov 26 15:19:12 2023 -0500
+
+    password file
+
+[33mcommit 65739032d9e398b97f254bea28d1b4ad06976b91[m
+Author: Brian R. Berrington <BERRINGB@mail.gvsu.edu>
+Date:   Sat Nov 25 14:05:45 2023 -0500
+
+    Added limit
+
+[33mcommit e878260316cf4210fdeef4159420946444a7e93d[m
+Author: Brian R. Berrington <BERRINGB@mail.gvsu.edu>
+Date:   Sat Nov 25 13:39:30 2023 -0500
+
+    Keypad LCD input
+
+[33mcommit d5f1f3bbea5a3054d62acff36f9f88e086228ef0[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Wed Nov 15 19:51:36 2023 -0500
+
+    lcd_decoder
+
+[33mcommit bd296cb48336bab656557d41cd469d1801c633a2[m
+Merge: 9a0bed4 a2615d6
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Wed Nov 15 19:46:23 2023 -0500
+
+    Merge branch 'main' of https://github.com/MatthewGageGV/VerilogLock
+
+[33mcommit a2615d63fab513ac62baa0e3e62d00f58b457c36[m
+Author: Brian R. Berrington <BERRINGB@mail.gvsu.edu>
+Date:   Wed Nov 15 19:39:47 2023 -0500
+
+    Added LCD Keypad Top module
+
+[33mcommit 9a0bed406344d506abb552ec2078405d9de3ec3c[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Wed Nov 15 19:08:51 2023 -0500
+
+    lcd decoder
+
+[33mcommit 85ed2f7de46017196b8bab490e1af635e29a5beb[m
+Author: Brian R. Berrington <BERRINGB@mail.gvsu.edu>
+Date:   Wed Nov 15 18:36:29 2023 -0500
+
+    Added Keypad and LCD modules
+
+[33mcommit 4b08b0578feb485fafb14893db1c6d5fd45eb00e[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Wed Nov 15 18:29:22 2023 -0500
+
+    added top file
+
+[33mcommit bf3758bdd46bb0ea3ca45b320d97dc8beda7504d[m
+Author: Matthew P. Gage <GAGEMA@mail.gvsu.edu>
+Date:   Wed Nov 15 17:22:27 2023 -0500
+
+    Added initial project

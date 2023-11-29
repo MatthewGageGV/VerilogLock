@@ -30,7 +30,13 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
                     Input_Wait          = 13,
                     Write_Input         = 14,
                     Write_Delay2        = 15,
-                    End                 = 16;
+                    End                 = 16,
+                    Locked              = 17,
+                    WriteLock           = 18,
+                    WaitLock            = 19,
+                    Unlocked            = 20,
+                    WriteUnlock         = 21,
+                    WaitUnlock          = 22;
                     
     reg [3:0] state = Initialize;
     reg E = 0, RS = 0, R_W = 0; 
@@ -38,6 +44,8 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
     
     reg [7:0] letter_pos;
     reg [7:0] line1 [0:14];
+    reg [7:0] unlocked[0:12];
+    reg [7:0] locked[0:10];
 
     initial begin
     
@@ -62,6 +70,36 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
         line1[12] = 8'h50; // P
         line1[13] = 8'h49; // I
         line1[14] = 8'h4E; // N
+        
+        unlocked[0]  = 8'h44; // 'D'
+        unlocked[1]  = 8'h6F; // 'o'
+        unlocked[2]  = 8'h6F; // 'o'
+        unlocked[3]  = 8'h72; // 'r'
+        
+        unlocked[4]  = 8'h20; // 'SPACCE'
+        
+        unlocked[5]  = 8'h55; // 'U'
+        unlocked[6]  = 8'h6E; // 'n'
+        unlocked[7]  = 8'h6C; // 'l'
+        unlocked[8]  = 8'h6F; // 'o'
+        unlocked[9]  = 8'h63; // 'c'
+        unlocked[10]  = 8'h6B; // 'k'
+        unlocked[11] = 8'h65; // 'e'
+        unlocked[12] = 8'h64; // 'd'
+        
+        locked[0]  = 8'h44; // 'D'
+        locked[1]  = 8'h6F; // 'o'
+        locked[2]  = 8'h6F; // 'o'
+        locked[3]  = 8'h72; // 'r'
+        
+        locked[4]  = 8'h20; // space
+        
+        locked[5]  = 8'h4C; // 'L'
+        locked[6]  = 8'h6F; // 'o'
+        locked[7]  = 8'h63; // 'c'
+        locked[8]  = 8'h6B; // 'k'
+        locked[9]  = 8'h65; // 'e'
+        locked[10] = 8'h64; // 'd'
     
     end
   
