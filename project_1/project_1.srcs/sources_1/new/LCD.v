@@ -1,12 +1,13 @@
 `timescale 1ns / 1ps
 
-module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
+module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
 
     input clk, reset, Key_Flag;
     input [7:0] Key_in;
     output [7:0] data;
     output E, RS, R_W;
     output [2:0] RGB;
+    output [7:0] LED;
     
     reg [27:0] clkcount;
     reg clk_divide_1MHz;
@@ -15,7 +16,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
     reg pass;
     reg[2:0] RGB;
     
-    parameter [3:0] Initialize          = 1,
+    parameter [7:0] Initialize          = 1,
                     Function_Set        = 2,
                     Wait1               = 3,
                     Display_Set         = 4,
@@ -32,13 +33,16 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
                     Write_Delay2        = 15,
                     End                 = 16,
                     Locked              = 17,
-                    WriteLock           = 18,
-                    WaitLock            = 19,
-                    Unlocked            = 20,
-                    WriteUnlock         = 21,
-                    WaitUnlock          = 22;
+                    Wait5               = 18,
+                    WriteLock           = 19,
+                    WaitLock            = 20,
+                    Unlocked            = 21,
+                    Wait6               = 22,
+                    WriteUnlock         = 23,
+                    WaitUnlock          = 24,
+                    End2                = 25;
                     
-    reg [3:0] state = Initialize;
+    reg [7:0] state = Initialize;
     reg E = 0, RS = 0, R_W = 0; 
     reg [7:0] data = 0;
     
@@ -104,7 +108,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
     end
   
     // 1MHz clock divider
-    always @(posedge clk or posedge reset) begin
+    always @(posedge clk) begin
     
         if (reset) begin 
         
@@ -123,7 +127,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
         
     end
     
-    always @(posedge clk_divide_1MHz) begin
+    always @(posedge clk_divide_1MHz or posedge reset) begin
     
         if (reset) begin
         
@@ -139,6 +143,9 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
           
           RS <= 0;
           E <= 0;
+          
+          key_count <= 0;
+          RGB <= 3'b000;
           
           if (delay_count == 20000) begin
             state <= Function_Set;
@@ -380,19 +387,159 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB);
         end
         
         End: begin
-          state <= End;
-          if (pass) begin
-            RGB <= 3'b100; // Green
-          end
-          else begin
+            
+            if (pass) begin
+                state <= Unlocked;
+            end else begin
+                state <= Locked;
+            end
+             
+        end
+        
+        Locked:
+        begin
+        
             RGB <= 3'b010; // Red
+        
+            RS <= 0;
+            E <= 1;
+            data <= 8'h01;
+          
+            state <= Wait5;
+        
+        end
+        
+        Wait5:
+        begin
+          
+          E <= 0;
+          
+          if (delay_count == 40) begin
+            state <= WriteLock;
+            delay_count <= 0;
+          end else begin
+            delay_count <= delay_count + 1;
+          end             
+                     
+        end
+        
+        WriteLock:
+        begin
+        
+          RS <= 1;
+          E <= 1;
+                
+          data <= locked[letter_pos];
+                
+          if (letter_pos == 11) begin 
+                
+            letter_pos <= 0;
+            state <= End2; 
+                
+          end else begin
+          
+            state <= WaitLock;
+            
           end
+        
+        end
+        
+        WaitLock:
+        begin
+        
+          E <= 0;
+          
+          if (delay_count == 26000) begin
+            letter_pos <= letter_pos + 1;
+            state <= WriteLock;
+            delay_count <= 0;
+          end else begin 
+            state <= WaitLock;
+            delay_count <= delay_count + 1;
+          end             
+        
+        end
+        
+        Unlocked:
+        begin
+        
+            RGB <= 3'b100; // Red
+        
+            RS <= 0;
+            E <= 1;
+            data <= 8'h01;
+          
+            state <= Wait6;
+        
+        end
+        
+        Wait6:
+        begin
+          
+          E <= 0;
+          
+          if (delay_count == 40) begin
+            state <= WriteUnlock;
+            delay_count <= 0;
+          end else begin
+            delay_count <= delay_count + 1;
+          end             
+                     
+        end
+        
+        WriteUnlock:
+        begin
+        
+          RS <= 1;
+          E <= 1;
+                
+          data <= unlocked[letter_pos];
+                
+          if (letter_pos == 13) begin 
+                
+            letter_pos <= 0;
+            state <= End2; 
+                
+          end else begin
+          
+            state <= WaitUnlock;
+            
+          end
+        
+        end
+        
+        WaitUnlock:
+        begin
+        
+          E <= 0;
+          
+          if (delay_count == 26000) begin
+            letter_pos <= letter_pos + 1;
+            state <= WriteUnlock;
+            delay_count <= 0;
+          end else begin 
+            state <= WaitUnlock;
+            delay_count <= delay_count + 1;
+          end             
+        
+        end
+        
+        End2:
+        begin
+                
+            if (Key_Flag)
+                state <= Initialize;
+            else 
+                state <= End2; 
+        
         end
         
       endcase
-      
+        
       end
     
     end
+    
+    assign LED = state;
     
 endmodule

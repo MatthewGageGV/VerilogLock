@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module LCD_Keypad_Top(clk, reset, row, col, anode, segment, LCD_Out, E, RS, R_W, RGB);
+module LCD_Keypad_Top(clk, reset, row, col, anode, segment, LCD_Out, E, RS, R_W, RGB, LED);
 
 input clk, reset;
 inout [3:0] row;
@@ -10,6 +10,8 @@ output RS, R_W, E;
 
 output [3:0] anode;
 output [6:0] segment;
+
+output [7:0] LED;
 
 output [7:0] LCD_Out;
 output [2:0] RGB;
@@ -30,7 +32,7 @@ Seg_Decoder         S3  (.display_value(display_2), .segment_out(seg2));
 Seg_Decoder         S4  (.display_value(display_3), .segment_out(seg3));
 Keypad              K1  (.clk(clk), .Row(row), .Col(col), .Out0(display_0), .Out1(display_1), .Out2(display_2), .Out3(display_3), .Flag_out(Key_Flag), .Key_out(Key_out));
 LCD_Decoder         D1  (.decode_in(Key_out), .decode_out(decode_out));
-LCD                 L1  (.clk(clk), .reset(reset), .data(LCD_Out), .RS(RS), .R_W(R_W), .E(E), .Key_Flag(Key_Flag), .Key_in(decode_out), .RGB(RGB));
+LCD                 L1  (.clk(clk), .reset(reset), .data(LCD_Out), .RS(RS), .R_W(R_W), .E(E), .Key_Flag(Key_Flag), .Key_in(decode_out), .RGB(RGB), .LED(LED));
 
 
 endmodule
