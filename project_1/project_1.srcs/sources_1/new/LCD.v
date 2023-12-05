@@ -75,35 +75,17 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
         line1[13] = 8'h49; // I
         line1[14] = 8'h4E; // N
         
-        unlocked[0]  = 8'h44; // 'D'
-        unlocked[1]  = 8'h6F; // 'o'
-        unlocked[2]  = 8'h6F; // 'o'
-        unlocked[3]  = 8'h72; // 'r'
+        unlocked[0]  = 8'h55; // 'U'
+        unlocked[1]  = 8'h6E; // 'n'
+        unlocked[2]  = 8'h6C; // 'l'
+        unlocked[3]  = 8'h6F; // 'o'
+        unlocked[4]  = 8'h63; // 'c'
+        unlocked[5]  = 8'h6B; // 'k'
         
-        unlocked[4]  = 8'h20; // 'SPACCE'
-        
-        unlocked[5]  = 8'h55; // 'U'
-        unlocked[6]  = 8'h6E; // 'n'
-        unlocked[7]  = 8'h6C; // 'l'
-        unlocked[8]  = 8'h6F; // 'o'
-        unlocked[9]  = 8'h63; // 'c'
-        unlocked[10]  = 8'h6B; // 'k'
-        unlocked[11] = 8'h65; // 'e'
-        unlocked[12] = 8'h64; // 'd'
-        
-        locked[0]  = 8'h44; // 'D'
+        locked[0]  = 8'h4C; // 'L'
         locked[1]  = 8'h6F; // 'o'
-        locked[2]  = 8'h6F; // 'o'
-        locked[3]  = 8'h72; // 'r'
-        
-        locked[4]  = 8'h20; // space
-        
-        locked[5]  = 8'h4C; // 'L'
-        locked[6]  = 8'h6F; // 'o'
-        locked[7]  = 8'h63; // 'c'
-        locked[8]  = 8'h6B; // 'k'
-        locked[9]  = 8'h65; // 'e'
-        locked[10] = 8'h64; // 'd'
+        locked[2]  = 8'h63; // 'c'
+        locked[3]  = 8'h6B; // 'k'
     
     end
   
@@ -280,7 +262,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
           
           RS <= 0;
           E <= 1;
-          data <= 8'hC6;
+          data <= 8'hC2;
 
           state <= Wait4;
         
@@ -403,7 +385,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
         
             RS <= 0;
             E <= 1;
-            data <= 8'h01;
+            data <= 8'hC8;
           
             state <= Wait5;
         
@@ -431,7 +413,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
                 
           data <= locked[letter_pos];
                 
-          if (letter_pos == 11) begin 
+          if (letter_pos == 4) begin 
                 
             letter_pos <= 0;
             state <= End2; 
@@ -467,7 +449,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
         
             RS <= 0;
             E <= 1;
-            data <= 8'h01;
+            data <= 8'hC8;
           
             state <= Wait6;
         
@@ -495,7 +477,7 @@ module LCD (clk, reset, data, RS, R_W, E, Key_Flag, Key_in, RGB, LED);
                 
           data <= unlocked[letter_pos];
                 
-          if (letter_pos == 13) begin 
+          if (letter_pos == 6) begin 
                 
             letter_pos <= 0;
             state <= End2; 

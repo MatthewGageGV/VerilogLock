@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Wed Nov 29 21:21:42 2023
-| Host             : KEN228_07 running 64-bit major release  (build 9200)
+| Date             : Tue Dec  5 17:43:15 2023
+| Host             : WINLAB-EGR_012 running 64-bit major release  (build 9200)
 | Command          : report_power -file LCD_Keypad_Top_power_routed.rpt -pb LCD_Keypad_Top_power_summary_routed.pb -rpx LCD_Keypad_Top_power_routed.rpx
 | Design           : LCD_Keypad_Top
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 13.283 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 14.644 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 13.077                           |
-| Device Static (W)        | 0.206                            |
+| Dynamic (W)              | 14.400                           |
+| Device Static (W)        | 0.244                            |
 | Effective TJA (C/W)      | 5.0                              |
-| Max Ambient (C)          | 18.6                             |
-| Junction Temperature (C) | 91.4                             |
+| Max Ambient (C)          | 11.8                             |
+| Junction Temperature (C) | 98.2                             |
 | Confidence Level         | Low                              |
 | Setting File             | ---                              |
 | Simulation Activity File | ---                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.683 |      505 |       --- |             --- |
-|   LUT as Logic |     0.580 |      228 |     20800 |            1.10 |
-|   CARRY4       |     0.053 |       26 |      8150 |            0.32 |
+| Slice Logic    |     0.757 |      503 |       --- |             --- |
+|   LUT as Logic |     0.656 |      229 |     20800 |            1.10 |
+|   CARRY4       |     0.051 |       26 |      8150 |            0.32 |
 |   Register     |     0.044 |      166 |     41600 |            0.40 |
 |   BUFG         |     0.006 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |        9 |       --- |             --- |
 |   F7/F8 Muxes  |     0.000 |        7 |     32600 |            0.02 |
-| Signals        |     0.678 |      438 |       --- |             --- |
-| I/O            |    11.716 |       43 |       106 |           40.57 |
-| Static Power   |     0.206 |          |           |                 |
-| Total          |    13.283 |          |           |                 |
+| Signals        |     0.748 |      437 |       --- |             --- |
+| I/O            |    12.895 |       43 |       106 |           40.57 |
+| Static Power   |     0.244 |          |           |                 |
+| Total          |    14.644 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,16 +72,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.499 |       1.381 |      0.118 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.454 |       0.429 |      0.025 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     3.312 |       3.311 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.674 |       1.525 |      0.149 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.501 |       0.472 |      0.029 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     3.645 |       3.644 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -139,11 +139,11 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| LCD_Keypad_Top |    13.077 |
-|   C1           |     0.267 |
-|   K1           |     0.626 |
-|   L1           |     0.201 |
-|   T1           |     0.223 |
+| LCD_Keypad_Top |    14.400 |
+|   C1           |     0.266 |
+|   K1           |     0.655 |
+|   L1           |     0.334 |
+|   T1           |     0.211 |
 +----------------+-----------+
 
 

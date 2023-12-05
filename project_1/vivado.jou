@@ -3,13 +3,42 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Nov 29 19:43:07 2023
-# Process ID: 16400
-# Current directory: C:/Users/berringb/Desktop/VerilogLock/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3076 C:\Users\berringb\Desktop\VerilogLock\project_1\project_1.xpr
-# Log file: C:/Users/berringb/Desktop/VerilogLock/project_1/vivado.log
-# Journal file: C:/Users/berringb/Desktop/VerilogLock/project_1\vivado.jou
-# Running On: KEN228_07, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 16979 MB
+# Start of session at: Tue Dec  5 17:30:36 2023
+# Process ID: 12588
+# Current directory: C:/Users/BERRINGB/Desktop/VerilogLock/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6676 C:\Users\BERRINGB\Desktop\VerilogLock\project_1\project_1.xpr
+# Log file: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/vivado.log
+# Journal file: C:/Users/BERRINGB/Desktop/VerilogLock/project_1\vivado.jou
+# Running On: WINLAB-EGR_012, OS: Windows, CPU Frequency: 2095 MHz, CPU Physical cores: 4, Host memory: 25768 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.xpr
+open_project C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file mkdir C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v w ]
+add_files -fileset sim_1 C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+source LCD_Keypad_Top.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Segment_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source Segment_tb.tcl
+close_sim
+launch_simulation
+source Segment_tb.tcl
+close_sim
+launch_simulation
+source Segment_tb.tcl
+close_sim

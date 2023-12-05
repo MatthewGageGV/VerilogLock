@@ -3,19 +3,18 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Nov 29 19:43:07 2023
-# Process ID: 16400
-# Current directory: C:/Users/berringb/Desktop/VerilogLock/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3076 C:\Users\berringb\Desktop\VerilogLock\project_1\project_1.xpr
-# Log file: C:/Users/berringb/Desktop/VerilogLock/project_1/vivado.log
-# Journal file: C:/Users/berringb/Desktop/VerilogLock/project_1\vivado.jou
-# Running On: KEN228_07, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 16979 MB
+# Start of session at: Tue Dec  5 17:30:36 2023
+# Process ID: 12588
+# Current directory: C:/Users/BERRINGB/Desktop/VerilogLock/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6676 C:\Users\BERRINGB\Desktop\VerilogLock\project_1\project_1.xpr
+# Log file: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/vivado.log
+# Journal file: C:/Users/BERRINGB/Desktop/VerilogLock/project_1\vivado.jou
+# Running On: WINLAB-EGR_012, OS: Windows, CPU Frequency: 2095 MHz, CPU Physical cores: 4, Host memory: 25768 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.xpr
+open_project C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/kcu105/1.0/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/kcu105/1.1/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/GAGEMA/VerilogLock/project_1' since last save.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
@@ -79,11 +78,336 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/berringb/Desktop/VerilogLock/project_1/project_1.ip_user_files'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.ip_user_files'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 1493.480 ; gain = 226.293
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:16 . Memory (MB): peak = 1521.676 ; gain = 297.781
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/utils_1/imports/synth_1/LCD_Keypad_Top.dcp with file C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/LCD_Keypad_Top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Dec  5 17:40:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec  5 17:40:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.runs/impl_1/runme.log
+file mkdir C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v w ]
+add_files -fileset sim_1 C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'LCD_Keypad_Top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'LCD_Keypad_Top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LCD_Keypad_Top_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Clk_Divider_1KHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Divider_1KHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Keypad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keypad
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LCD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LCD_Decoder
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_dec.v:12]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seg_Decoder
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Two_Bit_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Two_Bit_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/LCD_Keypad_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LCD_Keypad_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LCD_Keypad_Top_behav xil_defaultlib.LCD_Keypad_Top xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LCD_Keypad_Top_behav xil_defaultlib.LCD_Keypad_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Clk_Divider_1KHz
+Compiling module xil_defaultlib.Two_Bit_Counter
+Compiling module xil_defaultlib.Multiplexer
+Compiling module xil_defaultlib.Seg_Decoder
+Compiling module xil_defaultlib.Keypad
+Compiling module xil_defaultlib.LCD_Decoder
+Compiling module xil_defaultlib.LCD
+Compiling module xil_defaultlib.LCD_Keypad_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LCD_Keypad_Top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LCD_Keypad_Top_behav -key {Behavioral:sim_1:Functional:LCD_Keypad_Top} -tclbatch {LCD_Keypad_Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source LCD_Keypad_Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1578.789 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1578.789 ; gain = 21.652
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1578.789 ; gain = 21.652
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property top Segment_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Segment_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 9112 KB (Peak: 9112 KB), Simulation CPU Usage: 11296 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Segment_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Segment_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Segment_tb_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Segment_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Segment_tb_behav xil_defaultlib.Segment_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Segment_tb_behav xil_defaultlib.Segment_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Seg_Decoder
+Compiling module xil_defaultlib.Segment_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Segment_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Segment_tb_behav -key {Behavioral:sim_1:Functional:Segment_tb} -tclbatch {Segment_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Segment_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:56 . Memory (MB): peak = 1579.277 ; gain = 0.488
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:01:59 . Memory (MB): peak = 1579.277 ; gain = 0.488
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:02:04 . Memory (MB): peak = 1579.277 ; gain = 0.488
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 9052 KB (Peak: 9052 KB), Simulation CPU Usage: 116156 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Segment_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Segment_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Segment_tb_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seg_Decoder
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Segment_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Segment_tb_behav xil_defaultlib.Segment_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Segment_tb_behav xil_defaultlib.Segment_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Seg_Decoder
+Compiling module xil_defaultlib.Segment_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Segment_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Segment_tb_behav -key {Behavioral:sim_1:Functional:Segment_tb} -tclbatch {Segment_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Segment_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1579.277 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1579.277 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 1579.277 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 8268 KB (Peak: 8268 KB), Simulation CPU Usage: 15343 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Segment_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Segment_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Segment_tb_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seg_Decoder
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sources_1/new/Seg_Decoder.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.srcs/sim_1/new/Segment_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Segment_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Segment_tb_behav xil_defaultlib.Segment_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Segment_tb_behav xil_defaultlib.Segment_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Seg_Decoder
+Compiling module xil_defaultlib.Segment_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Segment_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BERRINGB/Desktop/VerilogLock/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Segment_tb_behav -key {Behavioral:sim_1:Functional:Segment_tb} -tclbatch {Segment_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Segment_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1582.617 ; gain = 1.801
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:59 . Memory (MB): peak = 1582.617 ; gain = 1.801
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:01:04 . Memory (MB): peak = 1582.617 ; gain = 1.801
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 8272 KB (Peak: 8272 KB), Simulation CPU Usage: 56077 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  5 18:57:22 2023...
